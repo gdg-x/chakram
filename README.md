@@ -1,5 +1,6 @@
 # GDG[x] Event Web App
-Standard Web App for GDG[X] Event. [Demo](https://devfest18-test.firebaseapp.com/)
+Standard Web App for GDG[X] Event. 
+[Demo](https://devfest18-test.firebaseapp.com/)
 Version: 1.0.2
 
 ## Overview
