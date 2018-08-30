@@ -1,0 +1,171 @@
+<!-- d-none d-lg-block -->
+<div class="container-fluid">
+    <div class="row p-0">
+        <div class="col-md-10 offset-md-1" >
+            <div class="container-fluid">
+                <div class="row mt-5 mb-5 align-items-center" > 
+                    <div class="col-md-6" style="padding-top: auto; padding-bottom: auto" >
+                        <h1 style="font-family: google-sans;font-weight: 350;color: #3c4043;" class="display-5 animated fadeInUp"><b>Build for <span style="color: #1a73e8;">Digital Wellbeing</span>.</b></h1>
+                        <br>
+                        <h4 style="font-family: google-sans;" class="animated fadeInUp">{{homeJson.eventName}}</h4>
+                        <p class="google-font animated fadeInUp">{{ homeJson.devfest18DetailsSmall }}</p>
+                        <p class="google-font text-muted animated fadeInUp">
+                            {{homeJson.eventDate}} &nbsp; {{homeJson.eventTime}} &nbsp; {{homeJson.eventVenue}}
+                        </p>
+                        <p class="google-font text-muted animated fadeInUp">
+                            <span ng-repeat="hs in homeJson.hashTag">
+                                {{hs.name}} &nbsp;
+                            </span>
+                            
+                        </p>
+
+                        <!-- <h5 class="google-font animated fadeInU">Coming Soon...</h5> -->
+
+                        <ul class="list-inline animated fadeInUp">
+                            <li class="list-inline-item" ng-repeat="sl in homeJson.socialLinks">
+                                <a href="{{sl.link}}" style="color: #3c4043;"><i class="fa {{sl.icon}}" aria-hidden="true"></i></a>
+                            </li>
+
+                        </ul>
+
+                        <a href="#registration" class="btn btn-primary btn-sm mt-2 m-0 waves-effect waves-light z-depth-0 animated fadeInUp google-font" style="text-transform:capitalize;">Request for an Invitation</a>
+                        &nbsp;
+
+                        <a href="{{homeJson.eventMeetupLink}}" target="_blank" class="btn btn-pink btn-sm mt-2 m-0 waves-effect waves-light z-depth-0 animated fadeInUp google-font" style="text-transform:capitalize;">Meetup Page</a>
+                        
+                    </div>
+
+                    <div class="col-md-6 d-none d-lg-block">
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-2 float-right" style="max-width: 90%;">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Osn5Y6N5rG0"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
+    <div class="container-fluid grey lighten-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 pt-5 pb-5">
+                <div class="container-fluid">
+                    <div class="row"> 
+                        <div class="col-md-3 text-center p-5 animated fadeInUp" ng-repeat="svs in homeJson.overviewSection">
+                            <i class="fa {{svs.icon}} fa-3x " style="color: #424242 ;text-align: center" aria-hidden="true"></i>
+                            <br><br>
+                            <h3 style="font-family: google-sans;color: #424242 ;" class="h3-responsive">{{svs.title}}</h3>
+                            <p style="font-size: 90%">{{svs.des}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid animated fadeInUp mt-2 mb-2">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 pt-5 pb-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 order-md-1 order-1">
+                            <h2 style="font-family: google-sans;font-weight: 350;color: #3c4043;" class="display-5 h2-responsive animated fadeInUp"><b>On the edge of <span style="color: #1a73e8;">Android, Web</span> and <span style="color: #1a73e8;">Cloud</span>.</b></h2>
+                            <br>
+                            <p class="google-font">{{homeJson.states.des}}</p>
+
+                            <a href="{{homeJson.states.previousEventHighlight}}" target="_blank" class="btn btn-outline-primary btn-sm mt-2 m-0 waves-effect waves-light z-depth-0 animated fadeInUp google-font" >See How it was in 2017 &nbsp; <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-md-6 order-md-2 order-0 pb-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    
+                                    <div class="col-md-6 col-6" ng-repeat="statis in homeJson.states.statistics">
+                                        <h1 style="font-family: google-sans;font-weight: 800;font-size: 300%" class="display-5 animated fadeInUp"><b><span style="color: #1a73e8;">{{statis.quantity}}</span></b></h1>
+                                        
+                                        <p class="google-font">{{statis.title}}</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="container-fluid pt-5 pb-3" style="background-image: url('https://gdgjalandhar.com/e/next18/assets/img/a.svg');background-repeat: no-repeat;background-size: cover;">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center pt-5">
+                            <h3 style="font-family: google-sans;color: #1a73e8;" class="mb-3">{{homeJson.speakerSection.title}}</h3>
+                            <p>{{homeJson.speakerSection.des}}</p>
+                            <a href="#speakers">See More</a>
+                        </div>
+                    </div>
+                    <div class="row mt-3" >
+                        <div class="col-md-3 col-6 text-center mt-4" ng-repeat="sp in speakersData | limitTo : 4">
+                            <img src="{{sp.profileImg}}" alt="Speaker Image" class="rounded-circle" width="60%">
+                            <br><br>
+                            <h5 style="font-family: google-sans;">{{sp.name}}</h5>
+                            <p>{{sp.company}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3 text-center mt-5">
+                <h3 style="font-family: google-sans;color: #1a73e8;" class="mb-3">{{homeJson.sessionsSection.title}}</h3>
+                <p>{{homeJson.sessionsSection.des}}</p>
+                <a href="#sessions">See More</a>
+            </div>
+        </div>
+
+        <div class="row mt-2" > 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="container-fluid">
+                            <!-- <h5 class="google-font">We work hard to be ready soon...</h5> -->
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 mt-4" ng-repeat="sedt in sessionsData | limitTo : 4">
+                                    <div class="white p-3 pt-4" style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-radius: 8px;height:100%">
+                                        <img src="assets/img/gdg logo.svg" alt="GDG Logo" width="30vh" style="background:#fafafa;border-radius: 2px;" class="mb-3">
+                                        <h5 style="font-family: google-sans;">{{sedt.title}}</h5>
+                                        <p>{{sedt.des}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="row mt-5 pb-5">
+            <div class="col-md-6 offset-md-3 text-center mt-5">
+                <h3 style="font-family: google-sans;color: #1a73e8;" class="mb-3">{{patData.title}}</h3>
+                <p>{{patData.description}}</p>
+                <br>
+                <div ng-repeat="pd in patData.patnersName">
+                    <a href="{{pd.URL}}" class="mb-5"><img src="{{pd.PatnerImg}}" width="{{pd.width}}" title="{{pd.name}}"></a>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>

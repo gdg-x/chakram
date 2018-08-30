@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row p-2">
+        <div class="col-md-8 offset-md-2 pt-2 pb-2">
+            <br>
+            <h3 class="animated fadeInUp" style="font-family: google-sans;color: #1a73e8;">Our lineup of big thinkers and even bigger doers</h3>
+            <br>
+            <p class="animated fadeInUp" style="font-family: google-sans">Hear from the speakers who shape the future of Android, Web and Cloud technologies. Check back often as we add more speakers all the time.</p>
+
+           <br>
+        </div>
+    </div>
+   
+</div>
+
+
+<div class="container-fluid" style="background-image: url('https://gdgjalandhar.com/e/next18/assets/img/a.svg');background-repeat: no-repeat;background-size: cover;">
+    <div class="row mt-2 mb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="container-fluid">
+                        <div class="row animated fadeInUp">
+                            <div class="col-md-3 col-6 text-center mt-4" ng-repeat="sp in speakersData">
+                                <img src="{{sp.profileImg}}" alt="Speaker Image" class="rounded-circle" width="60%">
+                                <br><br>
+                                <h5 class="h5-responsive" style="font-family: google-sans;">{{sp.name}}</h5>
+                                <p>{{sp.company}}</p>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="row animated fadeInUp" id="speakerData">
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 pb-5">
+        <div class="col-md-6 offset-md-3 text-center mt-5">
+            <h3 style="font-family: google-sans;color: #1a73e8;" class="mb-3">{{patData.title}}</h3>
+            <p>{{patData.description}}</p>
+            <br>
+            <div ng-repeat="pd in patData.patnersName">
+                <a href="{{pd.URL}}" class="mb-5"><img src="{{pd.PatnerImg}}" width="{{pd.width}}" title="{{pd.name}}"></a>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: google-sans;
+    src: url(../font/GoogleSans-Regular.ttf);
+}
+
+.view-frame.ng-enter {
+    animation: 0.4s fade-in;
+    z-index: 50;
+}
+
+.view-frame.ng-leave {
+    animation: 0.4s fade-out;
+    z-index: 50;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1;}
+}
+
+@keyframes fade-out {
+    from { opacity: 1;}
+    to   { opacity: 0;}
+}
+
+.img-grey{
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1);
+}
+.google-font{
+    font-family: google-sans;
+}
+
+/* Css for Loading */
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.loading-bar {
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    border-radius: 4px;
+    animation: loading 1s ease-in-out infinite;
+}
+.loading-bar:nth-child(1) {
+    background-color: #3498db;
+    animation-delay: 0;
+}
+.loading-bar:nth-child(2) {
+    background-color: #c0392b;
+    animation-delay: 0.09s;
+}
+.loading-bar:nth-child(3) {
+    background-color: #f1c40f;
+    animation-delay: .18s;
+}
+.loading-bar:nth-child(4) {
+    background-color: #27ae60;
+    animation-delay: .27s;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1, 2.2);
+    }
+    40% {
+        transform: scale(1);
+    }
+}

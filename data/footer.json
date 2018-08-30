@@ -1,0 +1,76 @@
+{   "chaperName" : "GDG Jalandhar",
+    "chapterSocialMediaLinks": {
+        "facebook" : "https://www.facebook.com/GDGJalandhar/",
+        "googlePlus" : "https://plus.google.com/u/0/+GdgjalandharIn/posts",
+        "twitter" : "https://twitter.com/gdgjalandhar",
+        "meetup" : "https://www.meetup.com/GDG-Jalandhar/",
+        "youtube" : "",
+        "slack" : "",
+        "linkedin" : "",
+        "github" : ""
+    },
+    "aboutSection":[
+        {
+            "linkName" : "GDG Jalandhar",
+            "link" : "http://gdgjalandhar.com/"
+        },
+        {
+            "linkName" : "Google Developers Groups",
+            "link" : "https://developers.google.com/programs/community/gdg/"
+        },
+        {
+            "linkName" : "WomenTechamkers",
+            "link" : "https://www.womentechmakers.com/"
+        },
+        {
+            "linkName" : "Meet the Team",
+            "link" : "https://gdgjalandhar.com/#/team"
+        },
+        {
+            "linkName" : "Become a Member",
+            "link" : "https://www.meetup.com/GDG-Jalandhar/"
+        }
+    ],
+    "eventResourcesSection" : [
+        {
+            "linkName" : "Become a Sponsor",
+            "link" : "gdgjalandhar@gmail.com"
+        },
+        {
+            "linkName" : "Call for Speaker",
+            "link" : "gdgjalandhar@gmail.com"
+        },
+        {
+            "linkName" : "Media Kit",
+            "link" : "https://drive.google.com/drive/folders/16rHDaHbuS_YApMWgJHUxygpd-A5gCkLK"
+        }
+    ],
+    "DevConsole" : [
+        {
+            "linkName" : "Google API Console",
+            "link" : "https://console.developers.google.com/"
+        },
+        {
+            "linkName" : "GCP Console",
+            "link" : "https://console.cloud.google.com/"
+        },
+        {
+            "linkName" : "Google Play Console",
+            "link" : "https://console.cloud.google.com/"
+        },
+        {
+            "linkName" : "Firebase Console",
+            "link" : "https://console.firebase.google.com/"
+        }
+    ],
+    "footerEndSection" : [
+        {
+            "linkName" : "Code of Conduct",
+            "link" : "https://docs.google.com/document/d/1Wz_w6Z7usMnXKFMpOY4IPbA35twK7Uc4CAxScGDiwOk/edit"
+        },
+        {
+            "linkName" : "Terms & Servies",
+            "link" : "https://docs.google.com/document/d/14g3fv9NItiB8Hd-YGYyVYd2N4LRxe6Bx3syWse_wsiA/edit?usp=sharing"
+        }
+    ]
+}

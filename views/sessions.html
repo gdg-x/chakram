@@ -1,0 +1,128 @@
+<style>
+    .active-bar{
+        color: white;
+        border: 5px;
+        border-bottom: 10px;
+        
+    }
+    .inactive-bar{
+        color:#bbdefb;
+    }
+</style>
+<div class="container-fluid primary-color z-depth-1 pt-2 mt-2">
+    <div class="row p-2 p-0">
+        <div class="col-md-10 offset-md-1 pl-1">
+            <ul class="nav md-tabs mx-0 mb-0 mt-1 mb-1 p-0">
+                <li class="nav-item active-bar" id="showSessionID" >
+                    <a class="nav-link google-font" ng-click="showSession()" ><b>Sessions</b></a>
+                </li>
+                <li class="nav-item inactive-bar" id="showScheduleID" >
+                    <a class="nav-link google-font" ng-click="showSchedule()" ><b>Schedule</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid pt-2 mt-2 " ng-show="varSessions">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="container-fluid">
+               
+                <div class="row pt-5">
+                    <div class="col-md-8">
+                        <h3 style="font-family: google-sans;color: #1a73e8;" class="animated fadeInUp">Sessions</h3>
+                        <br>
+                        <p style="font-family: google-sans" class="animated fadeInUp">Hone your skills. Ask technical questions. Get inspired. This year’s program is packed with breakouts, keynotes, spotlights, panels, and bootcamps.</p>
+
+                        <p style="font-family: google-sans" class="animated fadeInUp">Check back often as we continue to add new sessions.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row animated fadeInUp">
+
+                            <div class="col-md-3 col-sm-6 mt-4" ng-repeat="sedt in sessionsData">
+                                <div class="white p-3 pt-4" style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-radius: 8px;height:100%">
+                                    <img src="assets/img/gdg logo.svg" alt="GDG Logo" width="30vh" style="background:#fafafa;border-radius: 2px;" class="mb-3">
+                                    <h5 style="font-family: google-sans;">{{sedt.title}}</h5>
+                                    <p>{{sedt.des}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-2 mt-2 " ng-show="varSchedule">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="container-fluid" ng-controller="ctrlSchedule">
+                
+                <div class="row pt-5">
+                    <div class="col-md-8">
+                        <h3 style="font-family: google-sans;color: #1a73e8;" class="animated fadeInUp">Schedule</h3>
+                        <br>
+                        <p style="font-family: google-sans" class="animated fadeInUp">Hone your skills. Ask technical questions. Get inspired. This year’s program is packed with breakouts, keynotes, spotlights, panels, and bootcamps.</p>
+
+                        <p style="font-family: google-sans" class="animated fadeInUp">Check back often as we continue to add new sessions.</p>
+                    </div>
+                    <div class="col-md-4"> 
+                        <div class="md-form animated fadeInUp">
+                            <input type="text" id="materialLoginFormEmail" class="form-control" ng-model="search">
+                            <label for="materialLoginFormEmail"><i class="fa fa-search" aria-hidden="true"></i> Search inside Schedule</label>
+                            <small>All times are Indian Standard Time (UTC+05:30)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <table class="table table-hover animated fadeInUp" style="width: 100%;border-color:#e0e0e0;">
+                            <tr class="primary-color text-white">
+                                <td class="p-3" style="width: 20%">
+                                    <p class="google-font mb-0">Timing</p>
+                                </td>
+                                <td class="p-3" style="width: 20%">
+                                    <p class="google-font mb-0">Sessions Name</p>
+                                </td>
+                            </tr>
+                            <tr ng-repeat="sd in schData | filter: search">
+                                <td class="p-3" style="width: 20%;"><p class="google-font">{{sd.time}}</p></td>
+                                <td class="p-3" style="width: 80%;"><p class="google-font">{{sd.detail}}</p></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    
+
+
+
+<div class="container-fluid" style="background-image: url('assets/img/a.svg');background-repeat: no-repeat;background-size: cover;">
+
+    <div class="row mt-3 pb-5">
+        <div class="col-md-6 offset-md-3 text-center mt-5">
+            <h3 style="font-family: google-sans;color: #1a73e8;" class="mb-3">{{patData.title}}</h3>
+            <p>{{patData.description}}</p>
+            <br>
+            <div ng-repeat="pd in patData.patnersName">
+                <a href="{{pd.URL}}" class="mb-5"><img src="{{pd.PatnerImg}}" width="{{pd.width}}" title="{{pd.name}}"></a>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+
+</div>
