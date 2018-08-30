@@ -25,7 +25,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Setup Environment
    * Install Firebase CLI: `npm i -g firebase-tools` or `yarn global add firebase-tools`
 1. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
-1. Update [Firebase Web Setup & Basic Info](/index.html), [Venue Map](/views/attending.html) and [Resources](/data)
+1. Update [Firebase Web Setup & Basic Info](/index.html), [Venue Map](/views/attending.html), [manifest.json](/manifest.json) and [Resources](/data)
 1. Update Firebase.json file
   ```js 
   {
@@ -56,3 +56,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 * Firebase
 * Service Worker
 * Material Design Bootstrap
+
+
+Project is published under the [MIT license](/LICENSE.md).  
+Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
