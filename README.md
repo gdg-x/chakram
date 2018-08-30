@@ -7,7 +7,7 @@ Version: 1.0.2
 
 GDG[X] Event Web App is the conference website template that helps you to set conference website with registration, speakers and schedule management in a few minutes.
 
-The template is created by GDG Jalandhar team experience of running conferences.
+The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) team experience of running meetups.
 
 ## Features
 | Feature | Description |
