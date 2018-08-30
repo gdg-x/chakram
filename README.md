@@ -3,7 +3,7 @@
 <img width="800px" src="https://devfest18-jalandhar.firebaseapp.com/assets/img/brand.jpg">
 </p>
 Standard Web App for GDG[X] Event. <br>
-[Demo](https://devfest18-test.firebaseapp.com/)<br>
+[Demo](https://devfest18-test.firebaseapp.com) <br>
 Version: 1.0.2
 
 ## Overview
