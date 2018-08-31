@@ -75,6 +75,15 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 * Service Worker
 * Material Design Bootstrap
 
+### View Website Built with Project 
+
+| Community Name | Event Name | Web App Link | 
+| --- | --- | --- | 
+| GDG Jalandhar | GDG DevFest'18 | [View Now](https://devfest18-jalandhar.firebaseapp.com) |
+
+
+
+
 
 Project is published under the [MIT license](/LICENSE.md).  
 Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
