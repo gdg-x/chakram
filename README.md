@@ -28,42 +28,53 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Setup Environment
    * Install Firebase CLI: `npm i -g firebase-tools` or `yarn global add firebase-tools`
 1. Create [Firebase account](https://console.firebase.google.com) and login into [Firebase CLI](https://firebase.google.com/docs/cli/): `firebase login`
+1. Create a new Directory in your Local Machine.
+1. Open Terminal/CMD/Powershell in your dir.
+1. Now type `firebase login` command in your Terminal/CMD/Powershell. 
+1. Type `firebase init`.
+1. Select the project by using the arrow keys.
+1. Then Select the `Firebase Hosting` by using Spacebar and arrow key.
+1. Click `No` for Single page web app.
+1. Type `Public`.
+1. Some by default file will be created successfully.
+1. Move the cloned source file in `public` dir.
 1. Update [Firebase Web Setup & Basic Info](/index.html), [Venue Map](/views/attending.html), [manifest.json](/manifest.json) and [Resources](/data)
 1. Update Firebase.json file
-  ```js 
-  {
-  "hosting": {
-    "public": "public",
-    "rewrites": [ {
-      "source": "**",
-      "destination": "/index.html"
-    } ],
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
-}
-```
-6. Update the Firebase Real-Time Database Rules
-  ```js
+    ```js 
     {
-      "rules": {
-        "data": {
-          "$uid": {
-            ".write":"$uid === auth.uid",
-            ".read": "$uid === auth.uid"
-          },
+    "hosting": {
+      "public": "public",
+      "rewrites": [ {
+        "source": "**",
+        "destination": "/index.html"
+      } ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  }
+  ```
+  
+1. Update the Firebase Real-Time Database Rules
+    ```js
+      {
+        "rules": {
+          "data": {
+            "$uid": {
+              ".write":"$uid === auth.uid",
+              ".read": "$uid === auth.uid"
+            },
 
+          }
         }
       }
-    }
-  ```
-7. Enable the `Google SignIn` provider in `Firebase Auth`.
-8. Run locally
+    ```
+1. Enable the `Google SignIn` provider in `Firebase Auth`.
+1. Run locally
    * `npm run serve` or `yarn serve`
-9. Build and deploy
+1. Build and deploy
    * `npm run deploy` or `yarn deploy`
 
 
