@@ -81,7 +81,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 ## Technology Stack
 
 * AngularJS
-* Bootstrap
+* [Bootstrap](http://getbootstrap.com/)
 * Firebase
 * [Service Worker & PWA](https://pwafire.org/)
 * Material Design Bootstrap
