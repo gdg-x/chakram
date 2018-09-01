@@ -42,20 +42,20 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 1. Update Firebase.json file
     ```js 
     {
-    "hosting": {
-      "public": "public",
-      "rewrites": [ {
-        "source": "**",
-        "destination": "/index.html"
-      } ],
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
+      "hosting": {
+        "public": "public",
+        "rewrites": [ {
+          "source": "**",
+          "destination": "/index.html"
+        } ],
+        "ignore": [
+          "firebase.json",
+          "**/.*",
+          "**/node_modules/**"
+        ]
+      }
     }
-  }
-  ```
+    ```
   
 1. Update the Firebase Real-Time Database Rules
     ```js
