@@ -84,7 +84,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 * [Bootstrap](http://getbootstrap.com/)
 * [Firebase](http://angularjs.org/)
 * [Service Worker & PWA](https://pwafire.org/)
-* Material Design Bootstrap
+* [Material Design Bootstrap](https://mdbootstrap.com/)
 
 ### View Website Built with Project 
 
