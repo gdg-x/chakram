@@ -90,7 +90,7 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
 
 | Community Name | Event Name | Web App Link | 
 | --- | --- | --- | 
-| GDG Jalandhar | GDG DevFest'18 | [View Now](https://devfest18-jalandhar.firebaseapp.com) |
+| GDG Jalandhar | GDG DevFest'18 | [View Now](https://devfest.gdgjalandhar.com) |
 
 
 
