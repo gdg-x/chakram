@@ -73,9 +73,9 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
     ```
 1. Enable the `Google SignIn` provider in `Firebase Auth`.
 1. Run locally
-   * `npm run serve` or `yarn serve`
+   * `firebase serve` or `npm run serve` or `yarn serve` 
 1. Build and deploy
-   * `npm run deploy` or `yarn deploy`
+   * `firebase deploy` or `npm run deploy` or `yarn deploy`
 
 
 ## Technology Stack
